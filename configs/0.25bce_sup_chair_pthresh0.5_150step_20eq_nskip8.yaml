@@ -1,0 +1,140 @@
+backbone:
+  in_channels: 1
+  init_pretrained: null
+  kernels:
+  - 7
+  - 5
+  - 5
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  name: Mink16UNet34C
+  out_channels: 1
+batch_size: 32
+buffer_size: 1024
+n_bricks_every_step: 1
+lego_test: false
+lego_loss: bce_supervised
+lego_sample_feat: true
+lego_pred_thresh: 0.5
+lego_sup_n_skip: 8
+lego_brick_list:
+  - - 2
+    - 4
+  - - 4
+    - 2
+cache_only: true
+ckpt_step: 10000
+clip_grad:
+  options:
+    max_norm: 0.5
+  type: norm
+completion_rate: 0.95
+data_dim: 3
+data_root: ./data/modelnet_40
+dataset: lego_modelnet
+data_conv_stride: 8
+data_scale: 0.25
+data_voxel_size: 64
+debug_eval: false
+debug_vis: false
+device: cuda
+embedding_root: ./data/embeddings/shapenet/sofa-vox_64-sdf-step_700k
+empty_cache_step: 200
+epoch: 10000
+equilibrium_max_phase: 20
+eval_batch_size: 4
+eval_datasets:
+- - lego_modelnet
+  - val
+eval_size: 128
+eval_step: 1000
+infusion_scheduler:
+  initial_rate: 0.1
+  speed: 0.005
+  type: linear
+log_dir: log/lego-sofa-vox_64-padding_3-phase_30
+lr_scheduler:
+  options:
+    gamma: 1.0
+    step_size: 100000000
+  type: StepLR
+max_eval_phase: 150
+max_phase: 150
+max_sphere_centers: 1
+mean_vox_points: 3000
+min_eval_step: 1000000000
+min_test_step: 0
+min_vis_step: 1000000000
+model: lego_transition
+num_workers: 0
+obj_class: chair
+optimizer:
+  options:
+    lr: 0.0005
+    weight_decay: 0.0
+  type: Adam
+overfit_one_ex: null
+pad_type: hypercross
+padding: 5
+sampling_scheme: bernoulli
+seed: 0
+sphere_radius: 0.5
+summary_step: 100
+surface_cnt: 1024
+test_batch_size: 10
+test_datasets:
+- - lego_modelnet
+  - test
+test_dist_threshold: 0.5
+test_mode_seeking_phase: 0
+test_sample_nums:
+- 2048
+- 16384
+test_save_mesh: false
+# test_step: 100000
+test_step: 500
+test_trials: 1
+transform: null
+vis:
+  indices: 3
+  vis_collated_imgs:
+    step: 25000
+    vis_2d:
+      alpha: 1.0
+      axis_ranges:
+      - - -32
+        - 32
+      - - -32
+        - 32
+      - - -32
+        - 32
+      height: 300
+      project_axis: z
+      project_center: 0
+      project_thres: 1
+      save_tensor: false
+      save_tensor_interval: 1000000
+      width: 300
+    vis_3d:
+      alpha: 0.3
+      axis_ranges:
+      - - -32
+        - 32
+      - - -32
+        - 32
+      - - -32
+        - 32
+      height: 300
+      save_tensor: false
+      save_tensor_interval: 1000000
+      scene_capture: false
+      width: 300
+vis_batch_size: 1
+voxel_overflow: 20000
+voxel_size: 0.03125
+z_dim: 32
