@@ -1,3 +1,11 @@
 pyyaml
 tensorboard
 natsort
+six
+trimesh
+tqdm
+torch-scatter
+psutil
+scipy
+matplotlib
+pymcubes<0.1.6
