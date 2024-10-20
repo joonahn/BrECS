@@ -23,3 +23,14 @@ Then, install other dependencies following the command below.
 ```
 pip install -r requirements.txt
 ```
+
+## Citation
+
+```
+@article{AhnS2024tmlr,
+    title = {Budget-Aware Sequential Brick Assembly with Efficient Constraint Satisfaction},
+    author = {Ahn, Seokjun and Kim, Jungtaek and Cho, Minsu and Park, Jaesik},
+    journal = {Transactions on Machine Learning Research},
+    year = {2024}
+}
+```
