@@ -10,6 +10,15 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 ```
 Details can be found [here](https://pytorch.org/get-started/locally/).
 
+Secondly, install `MinkowskiEngine`. If you are using a machine with GPUs, you can just install it with `pip install MinkowskiEngine`. However, if your are install it in a CPU-only machine, we should command the following.
+
+```
+git clone https://github.com/NVIDIA/MinkowskiEngine.git
+cd MinkowskiEngine
+python setup.py install --cpu_only
+```
+Details can be found [here](https://nvidia.github.io/MinkowskiEngine/quick_start.html).
+
 Then, install other dependencies following the command below.
 ```
 pip install -r requirements.txt
