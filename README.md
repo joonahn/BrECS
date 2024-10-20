@@ -17,7 +17,7 @@ git clone https://github.com/NVIDIA/MinkowskiEngine.git
 cd MinkowskiEngine
 python setup.py install --cpu_only
 ```
-Details can be found [here](https://nvidia.github.io/MinkowskiEngine/quick_start.html).
+Details can be found [here](https://nvidia.github.io/MinkowskiEngine/quick_start.html). If you encounter an error related to OpenBLAS, refer to [this link](https://github.com/NVIDIA/MinkowskiEngine/issues/300#issuecomment-763343048).
 
 Then, install other dependencies following the command below.
 ```
