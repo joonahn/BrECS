@@ -4,10 +4,11 @@ It is the official repository of our work "Budget-Aware Sequential Brick Assembl
 
 ## Installation
 
-Firstly, install `torch` and `torchvision` considering your machine. For example, if you want to install them in a CPU-only machine, use the following. Details can be found [here](https://pytorch.org/get-started/locally/).
+Firstly, install `torch` and `torchvision` considering your machine. For example, if you want to install them in a CPU-only machine, use the following.
 ```
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 ```
+Details can be found [here](https://pytorch.org/get-started/locally/).
 
 Then, install other dependency following the command below.
 ```
