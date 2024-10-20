@@ -10,7 +10,7 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 ```
 Details can be found [here](https://pytorch.org/get-started/locally/).
 
-Then, install other dependency following the command below.
+Then, install other dependencies following the command below.
 ```
 pip install -r requirements.txt
 ```
