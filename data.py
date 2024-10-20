@@ -1,5 +1,9 @@
 import random
-from collections import Iterator, defaultdict
+from collections import defaultdict
+try:
+    from collections import Iterator
+except:
+    from collections.abc import Iterator
 from torch.utils.data import DataLoader
 from utils.util import timeit
 from datasets import DATASET
