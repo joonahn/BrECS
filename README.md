@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ```
 
 ## How to download the dataset
-Download link will be uploaded soon.
+You can download the dataset from this [link](https://drive.google.com/file/d/1-nlrNyKRHOn7sBZvtvk9BcutN7mLNzfB/view?usp=sharing). Please unzip it under the root directory of this repository.
 
 ## How to train
 Run the following command to train the model to build chairs.
