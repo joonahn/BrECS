@@ -48,4 +48,4 @@ Inference script will be uploaded soon.
 ```
 
 ## Acknowledgements
-This code is based on [PyTorch implemtation of Generative Cellular Automata](https://github.com/96lives/gca).
+This code is based on [PyTorch implementation of Generative Cellular Automata](https://github.com/96lives/gca).
